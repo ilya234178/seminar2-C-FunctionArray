@@ -39,4 +39,4 @@ return firstDigit;
 int maxDigit = MaxDigit(num);
 Console.WriteLine($"Число:  {num} ");
 if(maxDigit == 0) Console.WriteLine($"{num} Цифры одинаковые");
-else Console.WriteLine(maxDigit);
+else Console.WriteLine($"Большее:{maxDigit}");
