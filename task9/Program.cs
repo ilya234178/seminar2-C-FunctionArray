@@ -6,7 +6,7 @@
 // 85 -> 8
 
 
-int num =new Random().Next(10, 100);
+int num = new Random().Next(10, 100);
 int firstDigit = num / 10;
 int secondDigit = num % 10;
 
