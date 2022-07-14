@@ -6,7 +6,7 @@
 // 85 -> 8
 
 
-int num = new Random().Next(10, 100);
+int num =new Random().Next(10, 100);
 int firstDigit = num / 10;
 int secondDigit = num % 10;
 
@@ -17,7 +17,7 @@ if(firstDigit == secondDigit)
     Console.WriteLine("Цифры равны");
     
 }
-if(firstDigit < secondDigit){
+ else if(firstDigit < secondDigit){
     Console.WriteLine($"Большее: {secondDigit}");
 }else{
     Console.WriteLine($"Большее: {firstDigit}");
