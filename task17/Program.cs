@@ -33,10 +33,10 @@ int y = Convert.ToInt32(Console.ReadLine());
 
 string Quarter(int xc ,int yc)  //решение методом(функцией)
 {
-  if(x > 0 && y > 0)return  "Четверть первая";
-  if(x < 0 && y > 0)return "Четверты вторая";
-  if(x < 0 && y < 0)return "Четверть третья";
-  if(x > 0 && y < 0)return "Четверть четвертая";
+  if(xc > 0 && yc > 0)return  "Четверть первая";
+  if(xc < 0 && yc > 0)return "Четверты вторая";
+  if(xc < 0 && yc < 0)return "Четверть третья";
+  if(xc > 0 && yc < 0)return "Четверть четвертая";
   return "Введены некоректные координаты";
 }
 
