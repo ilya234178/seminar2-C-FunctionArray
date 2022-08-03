@@ -7,11 +7,24 @@
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int index = 1;
-int x = 0;
-while(index <= number)
+// int index = 1;                                           //без метода
+// int x = 0;
+// while(index <= number)
+// {
+//     x = x + 1;
+//     index = index * 10;
+// }
+// Console.WriteLine($"Колличество цифр в числе: {x}");
+int GetNum(int numb)
 {
-    x = x + 1;
-    index = index * 10;
+    int index = 1;                                           //через метод
+    int x = 0;
+    while (index <= numb)
+    {
+        x = x + 1;
+        index = index * 10;
+    }
+    return x;
 }
-Console.WriteLine($"Колличество цифр в числе: {x}");
+int res = GetNum(number);
+Console.WriteLine($"Колличество цифр в числе: {res}");
