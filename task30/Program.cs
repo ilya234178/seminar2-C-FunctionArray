@@ -23,7 +23,7 @@
 int[] array = GetRandomArray(8);
 WriteArrayToConsole(array);
 
-int[] GetRandomArray(int arrayLength)
+int[] GetRandomArray(int arrayLength )
 {
     Random rnd = new Random();
     int[] arr = new int[arrayLength];
@@ -44,5 +44,5 @@ void WriteArrayToConsole(int[] array)
         Console.Write(array[i]);
         if (i != array.Length - 1) Console.Write(",");
     }
-    Console.Write("]");
+    Console.Write("] ");
 }
