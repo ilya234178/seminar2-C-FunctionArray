@@ -38,7 +38,7 @@ Console.Write("Введите число: ");
 return Convert.ToInt32(Console.ReadLine());
 }
 
-void ToBin(int n)              //через метод с рекурсией
+void ToBin(int n)              //через метод с рекурсия
 {
     if(n == 0) return;
     ToBin(n / 2);
