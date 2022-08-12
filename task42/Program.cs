@@ -11,29 +11,39 @@
 Console.Clear();
 int num = GetUserInput();
 
-System.Console.WriteLine(ConvertToBinary(num));
+// System.Console.WriteLine(ConvertToBinary(num));
 
-string ConvertToBinary(int num)
-{
-string binary = string.Empty;
-while (num >= 1)
-{
-binary+= num % 2;
-num /= 2;
-}
-var item = binary.Reverse();
-binary = "";
-foreach(var i in item)
-{
-binary += i.ToString();
-}
+// string ConvertToBinary(int num)
+// {
+// string binary = string.Empty;
+// while (num >= 1)
+// {
+// binary+= num % 2;
+// num /= 2;
+// }
+// var item = binary.Reverse();
+// binary = "";
+// foreach(var i in item)
+// {
+// binary += i.ToString();
+// }
 
-return binary;
+// return binary;
 
-}
+// }
 
 int GetUserInput()
 {
 Console.Write("Введите число: ");
 return Convert.ToInt32(Console.ReadLine());
 }
+
+void ToBin(int n)              //через метод с рекурсией
+{
+    if(n == 0) return;
+    ToBin(n / 2);
+    Console.Write(n % 2);
+}
+
+ToBin(num);
+Console.WriteLine();
