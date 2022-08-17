@@ -35,19 +35,7 @@ void PrintMatrix(int[,] array)
 
 }
 
-// int[] Array(int[,] array)
-// {
-//     int[] arrayNew = new int[10];
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)
-//         {
-//             arrayNew[array[i, j]]++;
-//         }
 
-//     }
-//     return arrayNew;
-// }
 
 int[] ConvertionArray(int[,] array)
 {
@@ -66,15 +54,6 @@ int[] ConvertionArray(int[,] array)
     return arrayNew;
 }
 
-// void PrintArray(int[] array)
-// {
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         if (i == 0) Console.Write("[");
-//         if (i < array.Length - 1) Console.Write(array[i] + ", ");
-//         else Console.Write(array[i] + "]");
-//     }
-// }
 
 void WriteDigitLineToConsole(int[] arrayNew)
 {
